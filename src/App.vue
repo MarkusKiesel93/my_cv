@@ -38,17 +38,10 @@
 
       </v-col>
     </v-row>
-
-    <v-footer
-      app
-      fixed
-    >
-      <!-- name and year -->
-      <strong> &copy; {{ this.ccName }} </strong> - {{ this.year }}
-
-    </v-footer>
-
   </v-container>
+  <v-footer app fixed>
+      <strong> &copy; {{ this.ccName }} </strong> - {{ this.year }}
+  </v-footer>
 </v-app>
 </template>
 
@@ -93,3 +86,7 @@ export default {
   }),
 }
 </script>
+
+<style>
+
+</style>

@@ -213,8 +213,8 @@ export default new Vuex.Store({
         id: 5,
         category: 'Betriebssysteme',
         entries: [
-          'fajskf',
-          'faskfjasd'
+          'Linux (Debian, Ubuntu)',
+          'Windows'
         ]
       },
     ],
