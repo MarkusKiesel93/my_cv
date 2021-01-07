@@ -20,7 +20,7 @@ class RunPage():
 
     def run_prod_server(self):
         print(f'RUN PRODUCTION SERVER FOR: {self.project_name}')
-        sp.run(['docker-compose', 'up', '--build'])
+        sp.run(['docker-compose', 'up', '--build', '--detach'])
 
 
 if __name__ == "__main__":
