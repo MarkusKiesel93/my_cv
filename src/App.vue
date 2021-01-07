@@ -1,28 +1,95 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
-  </div>
+<v-app>
+  <!-- main container -->
+  <v-container>
+    <!-- header -->
+    <CVHeader :base="base"/>
+
+    <v-row no-gutters>
+      <v-col cols="9">
+        <!-- eductaion timeline -->
+        <CVTimeline 
+          title="Bildungsweg"
+          :items="education"
+        />
+
+        <!-- work timeline -->
+        <CVTimeline 
+          title="Berufslaufbahn"
+          :items="work"
+        />
+
+        <!-- projects -->
+        <CVProjectList :items="projects"/>
+      </v-col>
+
+      <v-col>
+        <!-- languages -->
+        <CVLanguageList :items="language"/>
+        
+        <!-- programming skills -->
+        <CVSkillList :items="skills"/>
+
+        <!-- certificates -->
+        <CVCertificatesList :items="certificates"/>
+
+        <!-- other knowledge -->
+        <CVKnowledgeList :items="knowledge"/>
+
+      </v-col>
+    </v-row>
+
+    <v-footer
+      app
+      fixed
+    >
+      <!-- name and year -->
+      <strong> &copy; {{ this.ccName }} </strong> - {{ this.year }}
+
+    </v-footer>
+
+  </v-container>
+</v-app>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
+import CVHeader from './components/CVHeader'
+import CVTimeline from './components/CVTimeline'
+import CVSkillList from './components/CVSkillList'
+import CVLanguageList from './components/CVLanguageList'
+import CVCertificatesList from './components/CVCertificatesList'
+import CVProjectList from './components/CVProjectList'
+import CVKnowledgeList from './components/CVKnowledgeList'
+
+import { mapState } from 'vuex'
 
 export default {
-  name: "App",
+  name: 'CV',
   components: {
-    HelloWorld
-  }
-};
-</script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+    CVHeader,
+    CVTimeline,
+    CVSkillList,
+    CVLanguageList,
+    CVProjectList,
+    CVCertificatesList,
+    CVKnowledgeList,
+  },
+  computed: {
+    ...mapState({
+      base: state => state.base,
+      contact: state => state.contact,
+      education: state => state.education,
+      work: state => state.work,
+      language: state => state.language,
+      skills: state => state.skills,
+      projects: state => state.projects,
+      certificates: state => state.certificates,
+      knowledge: state => state.knowledge,
+    })
+  },
+  data: () => ({
+    ccName: 'Markus Kiesel',
+    year: new Date().getFullYear(),
+  }),
 }
-</style>
+</script>

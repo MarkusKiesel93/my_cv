@@ -1,0 +1,49 @@
+#!/usr/bin/env python3
+
+from pathlib import Path
+import subprocess as sp
+import argparse as ap
+import sys
+
+
+class RunPage():
+    def __init__(self):
+        self.project_name = Path(__file__).parent.resolve().name
+        self.path_global_config = '/root/web/global-config.yml'
+        self.path_backend_env = './deploy/backend/production/settings.env'
+
+    def run_dev_server(self):
+        print(f'RUN DEVELOPMENT SERVER FOR: {self.project_name}')
+
+        sp.run(['npm', 'install'])
+        sp.run(['docker-compose', '-f', 'docker-compose.dev.yml', 'up', '--build'])
+
+    def run_prod_server(self):
+        print(f'RUN PRODUCTION SERVER FOR: {self.project_name}')
+        sp.run(['docker-compose', 'up', '--build'])
+
+
+if __name__ == "__main__":
+    parser = ap.ArgumentParser(prog='Run Webpage', description='Script to run development or production server')
+    parser.add_argument('-dev', '--development', action='store_true', help='run development server')
+    parser.add_argument('-prod', '--production', action='store_true', help='run production server')
+
+    args = parser.parse_args()
+    runpage = RunPage()
+
+    if args.development and args.production:
+        print('Select production or development not both.')
+    elif args.production:
+        try:
+            runpage.run_prod_server()
+        except KeyboardInterrupt:
+            print('shutting down production server')
+            sys.exit(1)
+    elif args.development:
+        try:
+            runpage.run_dev_server()
+        except KeyboardInterrupt:
+            print('shutting down production server')
+            sys.exit(1)
+    else:
+        print('Select either production or development server. (-prod or -dev)')
