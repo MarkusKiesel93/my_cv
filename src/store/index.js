@@ -56,7 +56,7 @@ export default new Vuex.Store({
         institution: 'Bundeshandelsakademie Horn',
         description: [
           'Abschluss: Reife- und Diplomprüfung mit gutem Erfolg',
-          'Spezialisierung: Information ..',
+          'Spezialisierung: Informationstechnik und Digital Management',
         ],
         image: require('@/assets/images/study/hak.png'),
       },
@@ -162,7 +162,7 @@ export default new Vuex.Store({
       },
       {
         id: 2,
-        title: 'Machine learning',
+        title: 'Machine Learning',
         text: 'Analyse von Datensätzen, Anwenden von Klassifikations- und Regressionmodellen an verschiedenen Datensätzen und Klassifizierung von Bildern in Python (NumPy, Pandas, scikit-learn, Keras, TensorFlow) im Zuge eines Machine Learning Projektes.',
         image: require('@/assets/images/project/machine_learning.png'),
       },
@@ -171,12 +171,6 @@ export default new Vuex.Store({
         title: 'Webentwicklung',
         text: 'Entwerfen und Entwickeln einer Webpage. Im Frontend JavaScript mit dem Framework Vue.js, im Backend Python mit dem Framework Django und als Datenbank PostgreSQL.',
         image: require('@/assets/images/project/web_dev.png'),
-      },
-      {
-        id: 3,
-        title: 'Weitere Projekte',
-        text: 'Alle weiteren Projekte finden sie auf unter meinem GitHub Profil',
-        image: require('@/assets/images/project/github.png'),
       },
     ],
     knowledge: [
