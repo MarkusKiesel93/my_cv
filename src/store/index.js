@@ -172,6 +172,12 @@ export default new Vuex.Store({
         text: 'Entwerfen und Entwickeln einer Webpage. Im Frontend JavaScript mit dem Framework Vue.js, im Backend Python mit dem Framework Django und als Datenbank PostgreSQL.',
         image: require('@/assets/images/project/web_dev.png'),
       },
+      {
+        id: 3,
+        title: 'Weitere Projekte',
+        text: 'Alle weiteren Projekte finden sie auf unter meinem GitHub Profil',
+        image: require('@/assets/images/project/github.png'),
+      },
     ],
     knowledge: [
       {

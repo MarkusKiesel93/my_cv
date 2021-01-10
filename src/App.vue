@@ -20,6 +20,21 @@
 
       <!-- projects -->
       <CVProjectList :items="projects"/>
+
+      <v-list>
+        <v-list-item>
+          <v-list-item-avatar tile>
+            <v-img :src="base.gitImage" />
+          </v-list-item-avatar>
+          <v-list-item-content>
+            <v-card>
+              <v-card-title> Weitere Projekte </v-card-title>
+              <v-card-text> Alle weiteren Projekte finden sie auf unter meinem GitHub Profil </v-card-text>
+            </v-card>
+          </v-list-item-content>
+        </v-list-item>
+      </v-list>
+
     </v-col>
 
     <v-col cols="12" md="3">
