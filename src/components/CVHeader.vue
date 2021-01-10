@@ -13,7 +13,7 @@
       contain
     />
 
-    <v-card-title class="text-h3"> {{ base.name }} </v-card-title>
+    <v-card-title class="text-h4"> {{ base.name }} </v-card-title>
     
     <v-card-subtitle class="text-h6"> {{ base.occupation }} </v-card-subtitle>
     

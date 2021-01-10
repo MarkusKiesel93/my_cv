@@ -1,6 +1,6 @@
 <template>
 <v-card tile class="pt-5">
-  <v-card-title> Sprachkentnisse </v-card-title>
+  <v-card-title class="text-h4"> Sprachkentnisse </v-card-title>
   
   <v-list>
     <v-list-item

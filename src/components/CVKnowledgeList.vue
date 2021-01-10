@@ -1,6 +1,6 @@
 <template>
 <v-card tile class="pt-5"> 
-  <v-card-title> Sonstige Kenntnisse und Qualifikationen </v-card-title>
+  <v-card-title class="text-h4"> Sonstige Kenntnisse </v-card-title>
   <v-container>
     <v-row
       v-for="item in items"
