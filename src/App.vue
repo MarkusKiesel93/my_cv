@@ -21,19 +21,23 @@
       <!-- projects -->
       <CVProjectList :items="projects"/>
 
-      <v-list>
-        <v-list-item>
-          <v-list-item-avatar tile>
-            <v-img :src="base.gitImage" />
-          </v-list-item-avatar>
-          <v-list-item-content>
-            <v-card>
-              <v-card-title> Weitere Projekte </v-card-title>
-              <v-card-text> Alle weiteren Projekte finden sie auf unter meinem GitHub Profil </v-card-text>
-            </v-card>
-          </v-list-item-content>
-        </v-list-item>
-      </v-list>
+      <v-card tile class="pt-5">
+        <v-card-title class="text-h4"> GitHub </v-card-title>
+        <v-list>
+          <v-list-item>
+            <a href="https://github.com/MarkusKiesel93" target="_blank">
+              <v-list-item-avatar tile>
+                  <v-img :src="base.gitImage" />
+              </v-list-item-avatar>
+            </a>
+            <v-list-item-content>
+              <v-card>
+                <v-card-text> Weitere Projekte finden Sie unter meinem <a href="https://github.com/MarkusKiesel93" target="_blank">GitHub Profil</a> </v-card-text>
+              </v-card>
+            </v-list-item-content>
+          </v-list-item>
+        </v-list>
+      </v-card>
 
     </v-col>
 
