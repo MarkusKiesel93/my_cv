@@ -209,14 +209,6 @@ export default new Vuex.Store({
           'RDF, RDFS, OWL',
         ]
       },
-      {
-        id: 5,
-        category: 'Betriebssysteme',
-        entries: [
-          'Linux (Debian, Ubuntu)',
-          'Windows'
-        ]
-      },
     ],
     certificates: [
       {

@@ -1,7 +1,7 @@
 <template>
-<v-card tile>
+<v-card tile class="pt-5">
   <v-card-title class="text-h4"> Projekte </v-card-title>
-
+  
   <v-card
     v-for="item in items"
       :item="item"

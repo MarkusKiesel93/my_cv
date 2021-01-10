@@ -1,5 +1,5 @@
 <template>
-<v-card tile> 
+<v-card tile class="pt-5"> 
   <v-card-title> Sonstige Kenntnisse und Qualifikationen </v-card-title>
   <v-container>
     <v-row

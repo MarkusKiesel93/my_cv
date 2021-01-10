@@ -3,7 +3,7 @@
   <!-- background image -->
   <v-img
     :src="base.backgroundImage"
-    height="25em"
+    height="20em"
   >
     <!-- profile picture -->
     <v-img

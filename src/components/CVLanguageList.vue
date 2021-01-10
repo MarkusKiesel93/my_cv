@@ -1,6 +1,7 @@
 <template>
-<v-card tile>
+<v-card tile class="pt-5">
   <v-card-title> Sprachkentnisse </v-card-title>
+  
   <v-list>
     <v-list-item
       v-for="item in items"

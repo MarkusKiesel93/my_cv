@@ -1,44 +1,43 @@
 <template>
+<!-- main container -->
 <v-app>
-  <!-- main container -->
-  <v-container>
-    <!-- header -->
-    <CVHeader :base="base"/>
+  <!-- header -->
+  <CVHeader :base="base"/>
 
-    <v-row no-gutters>
-      <v-col cols="9">
-        <!-- eductaion timeline -->
-        <CVTimeline 
-          title="Bildungsweg"
-          :items="education"
-        />
+  <v-row no-gutters>
+    <v-col cols="12" md="9">
+      <!-- eductaion timeline -->
+      <CVTimeline 
+        title="Bildungsweg"
+        :items="education"
+      />
 
-        <!-- work timeline -->
-        <CVTimeline 
-          title="Berufslaufbahn"
-          :items="work"
-        />
+      <!-- work timeline -->
+      <CVTimeline 
+        title="Berufslaufbahn"
+        :items="work"
+      />
 
-        <!-- projects -->
-        <CVProjectList :items="projects"/>
-      </v-col>
+      <!-- projects -->
+      <CVProjectList :items="projects"/>
+    </v-col>
 
-      <v-col>
-        <!-- languages -->
-        <CVLanguageList :items="language"/>
-        
-        <!-- programming skills -->
-        <CVSkillList :items="skills"/>
+    <v-col cols="12" md="3">
+      <!-- languages -->
+      <CVLanguageList :items="language"/>
+      
+      <!-- programming skills -->
+      <CVSkillList :items="skills"/>
 
-        <!-- certificates -->
-        <CVCertificatesList :items="certificates"/>
+      <!-- certificates -->
+      <CVCertificatesList :items="certificates"/>
 
-        <!-- other knowledge -->
-        <CVKnowledgeList :items="knowledge"/>
+      <!-- other knowledge -->
+      <CVKnowledgeList :items="knowledge"/>
 
-      </v-col>
-    </v-row>
-  </v-container>
+    </v-col>
+  </v-row>
+
   <v-footer>
       <strong> &copy; {{ this.ccName }} </strong> - {{ this.year }}
   </v-footer>
