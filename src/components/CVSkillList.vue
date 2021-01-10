@@ -40,8 +40,5 @@ export default {
       required: true,
     },
   },
-  created: function() {
-    console.log(this.items);
-  }
 }
 </script>
