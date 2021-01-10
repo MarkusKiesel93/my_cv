@@ -1,5 +1,5 @@
 <template>
-<v-card>
+<v-card tile>
   <!-- background image -->
   <v-img
     :src="base.backgroundImage"
@@ -16,15 +16,6 @@
     <v-card-title class="text-h3"> {{ base.name }} </v-card-title>
     
     <v-card-subtitle class="text-h6"> {{ base.occupation }} </v-card-subtitle>
-
-    <a href="https://github.com/MarkusKiesel93" target="_blank">
-      <v-img
-      :src="base.gitImage"
-      position="right"
-      height=3em
-      contain
-    />
-    </a>
     
   </v-img>
 </v-card>

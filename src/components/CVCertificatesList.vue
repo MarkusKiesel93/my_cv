@@ -1,5 +1,5 @@
 <template>
-<v-card>
+<v-card tile>
   <v-card-title> Zertifikate </v-card-title>
   <v-list>
     <v-list-item

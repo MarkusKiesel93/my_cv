@@ -39,7 +39,7 @@
       </v-col>
     </v-row>
   </v-container>
-  <v-footer app fixed>
+  <v-footer>
       <strong> &copy; {{ this.ccName }} </strong> - {{ this.year }}
   </v-footer>
 </v-app>

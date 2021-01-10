@@ -1,5 +1,5 @@
 <template>
-<v-card>
+<v-card tile> 
   <v-card-title> Programmiersprachen </v-card-title>
   <v-list>
     <v-list-item

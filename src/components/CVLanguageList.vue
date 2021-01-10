@@ -1,5 +1,5 @@
 <template>
-<v-card>
+<v-card tile>
   <v-card-title> Sprachkentnisse </v-card-title>
   <v-list>
     <v-list-item
