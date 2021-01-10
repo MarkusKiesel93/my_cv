@@ -21,23 +21,8 @@
       <!-- projects -->
       <CVProjectList :items="projects"/>
 
-      <v-card tile class="pt-5">
-        <v-card-title class="text-h4"> GitHub </v-card-title>
-        <v-list>
-          <v-list-item>
-            <a href="https://github.com/MarkusKiesel93" target="_blank">
-              <v-list-item-avatar tile>
-                  <v-img :src="base.gitImage" />
-              </v-list-item-avatar>
-            </a>
-            <v-list-item-content>
-              <v-card>
-                <v-card-text> Weitere Projekte finden Sie unter meinem <a href="https://github.com/MarkusKiesel93" target="_blank">GitHub Profil</a> </v-card-text>
-              </v-card>
-            </v-list-item-content>
-          </v-list-item>
-        </v-list>
-      </v-card>
+      <!-- github -->
+      <CVGitHub :image="base.gitImage" />
 
     </v-col>
 
@@ -70,6 +55,7 @@ import CVSkillList from './components/CVSkillList'
 import CVLanguageList from './components/CVLanguageList'
 import CVCertificatesList from './components/CVCertificatesList'
 import CVProjectList from './components/CVProjectList'
+import CVGitHub from './components/CVGitHub'
 import CVKnowledgeList from './components/CVKnowledgeList'
 
 import { mapState } from 'vuex'
@@ -82,6 +68,7 @@ export default {
     CVSkillList,
     CVLanguageList,
     CVProjectList,
+    CVGitHub,
     CVCertificatesList,
     CVKnowledgeList,
   },
