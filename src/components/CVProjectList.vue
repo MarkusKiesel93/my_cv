@@ -2,14 +2,24 @@
 <v-card tile class="pt-5">
   <v-card-title class="text-h4"> Projekte </v-card-title>
   
-  <v-card
-    v-for="item in items"
-      :item="item"
-      :key="item.id"
-  >
-    <v-card-title> {{ item.title }} </v-card-title>
-    <v-card-text> {{ item.text }} </v-card-text>
-  </v-card>
+  <v-list>
+    <v-list-item
+      v-for="item in items"
+        :item="item"
+        :key="item.id"
+    >
+      <v-list-item-avatar tile>
+        <v-img :src="item.image" />
+      </v-list-item-avatar>
+
+      <v-list-item-content>
+        <v-card tile>
+          <v-card-title> {{ item.title }} </v-card-title>
+          <v-card-text> {{ item.text }} </v-card-text>
+        </v-card>
+      </v-list-item-content>
+    </v-list-item>
+  </v-list>
 
   <!-- <v-card>
 

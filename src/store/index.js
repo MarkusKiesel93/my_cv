@@ -157,17 +157,20 @@ export default new Vuex.Store({
       {
         id: 1,
         title: 'Semantic System',
-        text: 'Programmieren einer Messungsumgebung zur Auswertung verschiedener Triplestores (RDF Datenbanken) in Java und Auswerten der Messdaten im Zuge meiner Bachelorarbeit.'
+        text: 'Programmieren einer Messungsumgebung zur Auswertung verschiedener Triplestores (RDF Datenbanken) in Java und Auswerten der Messdaten im Zuge meiner Bachelorarbeit.',
+        image: require('@/assets/images/project/semantic_web.png'),
       },
       {
         id: 2,
         title: 'Machine learning',
-        text: 'Analyse von Datensätzen, Anwenden von Klassifikations- und Regressionmodellen an verschiedenen Datensätzen und Klassifizierung von Bildern in Python (NumPy, Pandas, scikit-learn, Keras, TensorFlow) im Zuge eines Machine Learning Projektes.'
+        text: 'Analyse von Datensätzen, Anwenden von Klassifikations- und Regressionmodellen an verschiedenen Datensätzen und Klassifizierung von Bildern in Python (NumPy, Pandas, scikit-learn, Keras, TensorFlow) im Zuge eines Machine Learning Projektes.',
+        image: require('@/assets/images/project/machine_learning.png'),
       },
       {
         id: 3,
         title: 'Webentwicklung',
         text: 'Entwerfen und Entwickeln einer Webpage. Im Frontend JavaScript mit dem Framework Vue.js, im Backend Python mit dem Framework Django und als Datenbank PostgreSQL.',
+        image: require('@/assets/images/project/web_dev.png'),
       },
     ],
     knowledge: [
