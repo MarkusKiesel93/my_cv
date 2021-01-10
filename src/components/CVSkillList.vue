@@ -28,7 +28,7 @@
     </v-list-item>
   </v-list>
 
-  <div class="pl-3 text-caption"> von 0 keine Kenntnisse bis 10 Experte </div>
+  <div class="pl-3 text-caption"> *) von 0 keine Kenntnisse bis 10 Experte </div>
 </v-card>
 </template>
 
