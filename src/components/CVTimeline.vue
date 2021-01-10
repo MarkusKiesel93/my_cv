@@ -5,14 +5,13 @@
     <v-timeline-item 
       v-for="item in items" :item="item" :key="item.id" 
       right
-      class="mr-3"
       >
       <!-- icon on timeline -->
       <template v-slot:icon>
         <v-avatar tile> <v-img :src="item.image" /> </v-avatar>
       </template>
       <!-- content -->
-      <v-card tile>
+      <v-card tile class="mr-3 pl-3">
         <!-- titel -->
         <div class="text-h6">{{ item.title }}</div>
         <!-- subtitle -->
