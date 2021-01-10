@@ -20,22 +20,6 @@
       </v-list-item-content>
     </v-list-item>
   </v-list>
-
-  <!-- <v-card>
-
-    <v-card-title> Github </v-card-title>
-
-    <v-card-text>
-    <a href="https://github.com/MarkusKiesel93" target="_blank">
-        <v-img
-        :src="base.gitImage"
-        position="right"
-        height=3em
-        contain
-      />
-    </a>
-     </v-card-text>
-  </v-card> -->
 </v-card>
 </template>
 
