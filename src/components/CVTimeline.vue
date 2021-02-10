@@ -1,10 +1,11 @@
 <template>
 <v-card tile class="pt-5">
-  <v-card-title class="text-h4"> {{ title }} </v-card-title>
+  <v-card-title class="text-md-h4 text-h5"> {{ title }} </v-card-title>
   <v-timeline dense>
     <v-timeline-item 
       v-for="item in items" :item="item" :key="item.id" 
       right
+      class="mb-5"
       >
       <!-- icon on timeline -->
       <template v-slot:icon>

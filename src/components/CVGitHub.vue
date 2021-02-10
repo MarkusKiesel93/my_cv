@@ -1,6 +1,6 @@
 <template>
 <v-card tile class="pt-5">
-  <v-card-title class="text-h4"> GitHub </v-card-title>
+  <v-card-title class="text-md-h4 text-h5"> GitHub </v-card-title>
   <v-list>
     <v-list-item>
       <a href="https://github.com/MarkusKiesel93" target="_blank">

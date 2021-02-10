@@ -13,9 +13,9 @@
       contain
     />
 
-    <v-card-title class="text-h4 white--text"> {{ base.name }} </v-card-title>
+    <v-card-title class="text-md-h3 text-h4 white--text"> {{ base.name }} </v-card-title>
     
-    <v-card-subtitle class="text-h6 white--text"> {{ base.occupation }} </v-card-subtitle>
+    <v-card-subtitle class="text-md-h6 text-subtitle-1 white--text"> {{ base.occupation }} </v-card-subtitle>
     
   </v-img>
 </v-card>

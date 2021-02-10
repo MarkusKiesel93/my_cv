@@ -1,6 +1,6 @@
 <template>
 <v-card tile class="pt-5">
-  <v-card-title class="text-h4"> Projekte </v-card-title>
+  <v-card-title class="text-md-h4 text-h5"> Projekte </v-card-title>
   
   <v-list>
     <v-list-item
