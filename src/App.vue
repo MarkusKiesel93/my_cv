@@ -25,9 +25,6 @@
       <!-- projects -->
       <CVProjectList :items="projects"/>
 
-      <!-- github -->
-      <CVGitHub :image="base.gitImage" />
-
     </v-col>
 
     <v-col cols="12" md="3">
@@ -60,7 +57,6 @@ import CVSkillList from './components/CVSkillList'
 import CVLanguageList from './components/CVLanguageList'
 import CVCertificatesList from './components/CVCertificatesList'
 import CVProjectList from './components/CVProjectList'
-import CVGitHub from './components/CVGitHub'
 import CVKnowledgeList from './components/CVKnowledgeList'
 
 import { mapState } from 'vuex'
@@ -73,7 +69,6 @@ export default {
     CVSkillList,
     CVLanguageList,
     CVProjectList,
-    CVGitHub,
     CVCertificatesList,
     CVKnowledgeList,
   },
@@ -96,7 +91,3 @@ export default {
   }),
 }
 </script>
-
-<style>
-
-</style>
