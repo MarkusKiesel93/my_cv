@@ -10,7 +10,7 @@
       </a>
       <v-list-item-content>
         <v-card>
-          <v-card-text> Weitere Projekte finden Sie unter meinem <a href="https://github.com/MarkusKiesel93" target="_blank">GitHub Profil</a>.</v-card-text>
+          <v-card-text> Weitere Projekte finden Sie unter meinem GitHub Profil: <a href="https://github.com/MarkusKiesel93" target="_blank">MarkusKiesel93</a></v-card-text>
         </v-card>
       </v-list-item-content>
     </v-list-item>
