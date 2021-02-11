@@ -1,5 +1,5 @@
 <template>
-<v-card tile class="pt-5">
+<v-card tile class="pt-3 pb-5 mb-5">
   <v-card-title class="text-md-h4 text-h5"> GitHub </v-card-title>
   <v-list>
     <v-list-item>

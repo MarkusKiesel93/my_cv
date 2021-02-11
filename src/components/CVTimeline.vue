@@ -1,18 +1,17 @@
 <template>
-<v-card tile class="pt-5">
+<v-card tile class="pt-3 pb-5 mb-5">
   <v-card-title class="text-md-h4 text-h5"> {{ title }} </v-card-title>
   <v-timeline dense>
     <v-timeline-item 
       v-for="item in items" :item="item" :key="item.id" 
       right
-      class="mb-5"
       >
       <!-- icon on timeline -->
       <template v-slot:icon>
         <v-avatar tile> <v-img :src="item.image" /> </v-avatar>
       </template>
       <!-- content -->
-      <v-card tile class="mr-3 pl-3">
+      <v-card tile class="mr-3 pl-3 pt-3 pb-3">
         <!-- titel -->
         <div class="text-h6">{{ item.title }}</div>
         <!-- subtitle -->
