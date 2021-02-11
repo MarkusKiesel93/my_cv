@@ -11,9 +11,10 @@
       position="left"
       height=13em
       contain
+      class="ml-5 mt-3"
     />
 
-    <v-card-title class="text-md-h3 text-h4 white--text"> {{ base.name }} </v-card-title>
+    <v-card-title class="text-md-h3 text-sm-h4 text-h5 white--text"> {{ base.name }} </v-card-title>
     
     <v-card-subtitle class="text-md-h6 text-subtitle-1 white--text"> {{ base.occupation }} </v-card-subtitle>
     

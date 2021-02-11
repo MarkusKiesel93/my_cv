@@ -1,6 +1,10 @@
 <template>
 <!-- main container -->
 <v-app>
+<v-container
+  fluid
+  class="py-0 px-0 px-lg-16 px-md-8"
+>
   <!-- header -->
   <CVHeader :base="base"/>
 
@@ -45,6 +49,7 @@
   <v-footer>
       <strong> &copy; {{ this.ccName }} </strong> - {{ this.year }}
   </v-footer>
+</v-container> 
 </v-app>
 </template>
 
