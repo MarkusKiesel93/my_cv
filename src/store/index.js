@@ -10,7 +10,20 @@ export default new Vuex.Store({
       occupation: 'Zukünftiger Data Scientist',
       profileImage: require('@/assets/images/profile.jpg'),
       backgroundImage: require('@/assets/images/background.jpg'),
-      gitImage: require('@/assets/images/github.png'),
+      links: [
+        {
+          id: 1,
+          text: "GitHub",
+          link: "https://github.com/MarkusKiesel93",
+          icon: "mdi-github",
+        },
+        {
+          id: 2,
+          text: "Download",
+          link: "http://cv.pdf.kiesel.tech",
+          icon: "mdi-pdf-box",
+        },
+      ]
     },
     education: [
       {
