@@ -3,10 +3,10 @@
   <!-- background image -->
   <v-img
     :src="base.backgroundImage"
-    max-height="20em"
+    :height="height"
   >
      <v-row>
-      <v-col cols="12" md="9">
+      <v-col cols="12" sm="6">
         <!-- profile picture -->
         <v-img
           :src="base.profileImage"
@@ -20,9 +20,9 @@
         
         <v-card-subtitle class="text-md-h6 text-subtitle-1 white--text"> {{ base.occupation }} </v-card-subtitle>
       </v-col>
-      <v-col fluid align-self="end">
-        <v-row justify="end">
-          <CVLinkList :items="base.links"/>
+      <v-col align-self="end">
+        <v-row justify="end" class="mb-4 mr-1">
+          <CVButtons :items="base.links"/>
         </v-row>
       </v-col>
      </v-row>
@@ -32,18 +32,28 @@
 
 <script>
 
-import CVLinkList from './CVLinkList'
+import CVButtons from './CVButtons'
 
 export default {
   name: 'CVHeader',
   components: {
-    CVLinkList,
+    CVButtons,
   },
   props: {
     base: {
       type: Object,
       required: true,
     },
+  },
+  computed: {
+    height () {
+      if (this.$vuetify.breakpoint.xsOnly) {
+        return 370
+      }
+      else {
+        return 320
+      }
+    }
   },
 }
 </script>

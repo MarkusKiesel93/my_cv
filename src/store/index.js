@@ -13,7 +13,7 @@ export default new Vuex.Store({
       links: [
         {
           id: 1,
-          text: "GitHub",
+          text: "Git Hub",
           link: "https://github.com/MarkusKiesel93",
           icon: "mdi-github",
         },
