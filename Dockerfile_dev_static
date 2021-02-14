@@ -1,0 +1,11 @@
+FROM nginx:stable-alpine
+
+WORKDIR /files
+
+RUN rm /etc/nginx/conf.d/default.conf
+
+COPY ./nginx.dev.conf /etc/nginx/conf.d/nginx.conf
+
+COPY ./static/ ./static/
+
+CMD ["nginx", "-g", "daemon off;"]

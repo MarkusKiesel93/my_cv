@@ -5,9 +5,16 @@ services:
     container_name: cv_dev
     build:
       context: .
-      dockerfile: Dockerfile_DEV
+      dockerfile: Dockerfile_dev
     ports:
       - '8080:8080'
     volumes:
       - './:/app'
     command: npm run serve
+  static:
+    container_name: cv_dev_static
+    build:
+      context: .
+      dockerfile: Dockerfile_dev_static
+    ports:
+      - '8001:8001'
