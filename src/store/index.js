@@ -1,7 +1,7 @@
-import Vue from 'vue';
-import Vuex from 'vuex';
+import Vue from 'vue'
+import Vuex from 'vuex'
 
-Vue.use(Vuex);
+Vue.use(Vuex)
 
 let BASE_PATH = process.env.BASE_URL + 'static/'
 if (process.env.NODE_ENV === 'development') {
@@ -28,7 +28,7 @@ export default new Vuex.Store({
           link: 'http://cv.pdf.kiesel.tech',
           icon: 'mdi-pdf-box',
         },
-      ]
+      ],
     },
     education: [
       {
@@ -37,9 +37,7 @@ export default new Vuex.Store({
         from: '2019',
         institution: 'Technische Universität Wien',
         image: BASE_PATH + 'images/study/tu.png',
-        description: [
-          'derzeit laufendes Studium'
-        ],
+        description: ['derzeit laufendes Studium'],
       },
       {
         id: 2,
@@ -52,7 +50,7 @@ export default new Vuex.Store({
           'Abschluss: Bachelor of Science (WU)',
           'Spezialisierung 1: Information Management and Control',
           'Spezialisierung 2: Information Business',
-          'Bachelorarbeit: Evaluating RDF Stores for Evolving Linked Data (written in English)'
+          'Bachelorarbeit: Evaluating RDF Stores for Evolving Linked Data (in English)',
         ],
       },
       {
@@ -61,9 +59,7 @@ export default new Vuex.Store({
         from: '2013',
         to: '2016',
         institution: 'Technische Universität Wien',
-        description: [
-          'als Zweitstudium geführt aber nicht abgeschlossen',
-        ],
+        description: ['als Zweitstudium geführt aber nicht abgeschlossen'],
         image: BASE_PATH + 'images/study/tu.png',
       },
       {
@@ -198,7 +194,7 @@ export default new Vuex.Store({
         entries: [
           'Linux (Debian, Ubuntu)',
           'Windows',
-        ]
+        ],
       },
       {
         id: 2,
@@ -210,7 +206,7 @@ export default new Vuex.Store({
           'Jupyter Notebooks',
           'JIRA',
           'SAP',
-        ]
+        ],
       },
       {
         id: 3,
@@ -218,7 +214,7 @@ export default new Vuex.Store({
         entries: [
           'Django',
           'Vue.js'
-        ]
+        ],
       },
       {
         id: 4,
@@ -228,7 +224,7 @@ export default new Vuex.Store({
           'HTML, CSS',
           'JSON, YAML',
           'RDF, RDFS, OWL',
-        ]
+        ],
       },
     ],
     certificates: [
@@ -236,11 +232,11 @@ export default new Vuex.Store({
         id: 1,
         title: 'Process Analyst',
         description: 'Prüfung zum "Process Anlayst" am 31.01.2017 ausgestellt von der Gesellschaft für Prozessmanagement in Kooperation mit der WU Wien.',
-        image:  BASE_PATH + 'images/certificates/processmanagement.png',
+        image: BASE_PATH + 'images/certificates/processmanagement.png',
       },
-    ]
+    ],
   },
   mutations: {},
   actions: {},
-  modules: {}
-});
+  modules: {},
+})
