@@ -7,13 +7,14 @@ services:
       context: .
       dockerfile: Dockerfile
     volumes:
-      - '/node_modules'
+      - '/node_modules'     
     expose:
       - 80
     restart: unless-stopped
     networks:
       - proxy
     environment:
+      - PUBLIC_DOMAIN=cv.kiesel.tech
       - VIRTUAL_HOST=cv.kiesel.tech,www.cv.kiesel.tech
       - LETSENCRYPT_HOST=cv.kiesel.tech,www.cv.kiesel.tech
 

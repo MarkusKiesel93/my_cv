@@ -5,22 +5,20 @@ import subprocess as sp
 import argparse as ap
 import sys
 
+PAGE_NAME = 'MY CV'
+GLOBAL_CONFIG = Path('/root/web/global-config.yml')
 
-class RunPage():
-    def __init__(self):
-        self.project_name = Path(__file__).parent.resolve().name
-        self.path_global_config = '/root/web/global-config.yml'
-        self.path_backend_env = './deploy/backend/production/settings.env'
 
-    def run_dev_server(self):
-        print(f'RUN DEVELOPMENT SERVER FOR: {self.project_name}')
+def run_development():
+    print(f'RUN DEVELOPMENT SERVER FOR: {PAGE_NAME}')
+    sp.run(['npm', 'install'])
+    sp.run(['docker-compose', '-f', 'docker-compose.dev.yml', 'up', '--build'])
 
-        sp.run(['npm', 'install'])
-        sp.run(['docker-compose', '-f', 'docker-compose.dev.yml', 'up', '--build'])
 
-    def run_prod_server(self):
-        print(f'RUN PRODUCTION SERVER FOR: {self.project_name}')
-        sp.run(['docker-compose', 'up', '--build', '--detach'])
+def run_production():
+    print(f'RUN PRODUCTION SERVER FOR: {PAGE_NAME}')
+    sp.run(['npm', 'install'])
+    sp.run(['docker-compose', 'up', '--build', '--detach'])
 
 
 if __name__ == "__main__":
@@ -29,21 +27,20 @@ if __name__ == "__main__":
     parser.add_argument('-prod', '--production', action='store_true', help='run production server')
 
     args = parser.parse_args()
-    runpage = RunPage()
 
     if args.development and args.production:
         print('Select production or development not both.')
     elif args.production:
         try:
-            runpage.run_prod_server()
+            run_production()
         except KeyboardInterrupt:
             print('shutting down production server')
             sys.exit(1)
     elif args.development:
         try:
-            runpage.run_dev_server()
+            run_development()
         except KeyboardInterrupt:
-            print('shutting down production server')
+            print('shutting down development server')
             sys.exit(1)
     else:
         print('Select either production or development server. (-prod or -dev)')

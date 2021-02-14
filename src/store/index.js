@@ -25,7 +25,7 @@ export default new Vuex.Store({
         {
           id: 2,
           text: 'Download',
-          link: 'http://cv.pdf.kiesel.tech',
+          link: 'http://cv.kiesel.tech/static/images/cv_markus_kiesel.pdf',
           icon: 'mdi-pdf-box',
         },
       ],
