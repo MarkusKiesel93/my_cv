@@ -17,7 +17,6 @@ def run_development():
 
 def run_production():
     print(f'RUN PRODUCTION SERVER FOR: {PAGE_NAME}')
-    sp.run(['npm', 'install'])
     sp.run(['docker-compose', 'up', '--build', '--detach'])
 
 
