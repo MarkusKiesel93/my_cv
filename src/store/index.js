@@ -231,7 +231,7 @@ export default new Vuex.Store({
       {
         id: 1,
         title: 'Process Analyst',
-        description: 'Prüfung zum "Process Anlayst" am 31.01.2017 ausgestellt von der Gesellschaft für Prozessmanagement in Kooperation mit der WU Wien.',
+        description: 'Prüfung zum "Process Analyst" am 31.01.2017 ausgestellt von der Gesellschaft für Prozessmanagement in Kooperation mit der WU Wien.',
         image: BASE_PATH + 'images/certificates/processmanagement.png',
       },
     ],
